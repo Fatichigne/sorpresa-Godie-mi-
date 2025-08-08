@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Una sorpresa para ti</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #ff80aa;
+      color: white;
+      cursor: pointer;
+    }
+    #mensajeFinal {
+      display: none;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola... 💌</h1>
+  <p>No es un virus, solo sé que no quiero que sigas incómodo conmigo, hice esto para ti.</p>
+  <p>¿Quieres leerla?</p>
+
+  <button onclick="mostrarMensaje()">Sí, quiero</button>
+  <button onclick="alert('Está bien... pero recuerda que te amo ❤️')">No, gracias</button>
+
+  <div id="mensajeFinal">
+    <p>Gracias por quedarte hasta aquí.</p>
+    <p>Sé que estás molesto conmigo, y no quiero que esto se quede en palabras bonitas y que veas que me duele saber que estás así, y te aseguro que me importa lo que sientes. No intento justificar nada, solo decirte que quiero entenderte, escucharte, y que me importa arreglar las cosas contigo. Estoy aquí, siempre para ti, esperando poder hablar contigo.</p>
+    <p>Te amo, y aunque yo sé que esto tal vez no solucione nada espero pueda acercarme un poquito a ti.</p>
+    <p>— Fla 💌</p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensajeFinal").style.display = "block";
+    }
+  </script>
+</body>
+</html>
